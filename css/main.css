@@ -1,3 +1,47 @@
 html {
   background-color: #000;
 }
+
+.clock-face {
+  height: 300px;
+  margin: 50px auto;
+  position: relative;
+  width: 300px;
+
+  background: transparent url(../images/clock-face.svg) no-repreat center center;
+}
+
+.clock-center {
+  bottom: calc(50% - 14px);
+  left: calc(50% - 14px);
+  position: absolute;
+  width:28px;
+}
+
+.hand {
+  bottom: calc(50% - 8px);
+  left: calc(50% - 7px);
+  position: absolute;
+  width: 14px;
+
+  transform-origin: 50% calc(100% - 8px);
+}
+
+.hand-minute {
+  animation: hand-rotate .5s linear infinite;
+}
+
+@@keyframes hand-rotate {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hand-hour {
+  animation: hand-rotate 6s linear infinite;
+}
