@@ -31,7 +31,7 @@ html {
   animation: hand-rotate .5s linear infinite;
 }
 
-@@keyframes hand-rotate {
+@keyframes hand-rotate {
 
   0% {
     transform: rotate(0deg);
