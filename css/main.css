@@ -8,14 +8,14 @@ html {
   position: relative;
   width: 300px;
 
-  background: transparent url(../images/clock-face.svg) no-repeat center center;
+  background: transparent url("../images/clock-face.svg") no-repeat center center;
 }
 
 .clock-center {
   bottom: calc(50% - 14px);
   left: calc(50% - 14px);
   position: absolute;
-  width:28px;
+  width: 28px;
 }
 
 .hand {
